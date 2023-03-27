@@ -47,7 +47,7 @@ for (let k = (1 - 1); k <= (42 - 1); k++) {
 
     // image.setAttribute('src', `https://picsum.photos/500?random=${k + 1}`);
 
-    image.setAttribute('src', `images/${imgRandArrNrs[k + 1]}.jpg`);
+    image.setAttribute('src', `resources/images/${imgRandArrNrs[k + 1]}.jpg`);
 
 
     image.setAttribute('alt', `Image${k + 1}`);

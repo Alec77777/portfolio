@@ -1,0 +1,66 @@
+.container>.waterfall {
+    display: flex;
+    gap: 2vw;
+    margin: 3vw;
+    width: 94vw;
+    height: 97vh;
+    overflow-x: hidden;
+    justify-content: center;
+    transition: 1s;
+    box-shadow: -1px -1px 5px white, 1px -1px 5px white;
+    overflow-y: hidden;
+}
+
+.container>.waterfall>.column {
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    position: relative;
+}
+
+.container>.waterfall>.column>.card:hover {
+    box-shadow: -3px -3px 5px yellow, -3px 3px 5px yellow, 3px -3px 5px yellow, 3px 3px 5px yellow;
+}
+
+.container>.waterfall>.column>.card>.image {
+    display: flex;
+    width: 15vw;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    outline: 1px solid white;
+    position: relative;
+}
+
+.container>.waterfall>.column>.card>.image::before {
+    content: attr(alt);
+    position: absolute;
+    bottom: 0;
+    padding-left: 1vw;
+    text-overflow: ellipsis;
+    color: white;
+}
+
+.container>.waterfall>.column1 {
+    animation: letItRain 5s ease 0s infinite alternate none;
+}
+
+.container>.waterfall>.column2 {
+    animation: letItRain 8s ease 0s infinite alternate none;
+}
+
+.container>.waterfall>.column3 {
+    animation: letItRain 13s ease 0s infinite alternate none;
+}
+
+.container>.waterfall>.column4 {
+    animation: letItRain 7s ease 0s infinite alternate none;
+}
+
+.container>.waterfall>.column5 {
+    animation: letItRain 4s ease 0s infinite alternate none;
+}
+
+.container>.waterfall>.column6 {
+    animation: letItRain 12s ease 0s infinite alternate none;
+}
